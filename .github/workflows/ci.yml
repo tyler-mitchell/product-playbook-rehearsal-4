@@ -30,6 +30,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm run check
       - run: pnpm run release:preflight
+      - run: pnpm run release:preflight
 
   release-plan:
     if: github.event_name == 'pull_request'
